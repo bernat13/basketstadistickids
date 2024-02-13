@@ -1,0 +1,21 @@
+<app-header title="Jugador"></app-header>
+
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+    <h2>Pau Gasol</h2>
+    <p> <ion-label>Dorsal: 16</ion-label></p>
+    <p> <ion-label>Equipo: Los Angeles Lakers</ion-label></p>
+    <h2>Partidos</h2>
+    <!-- lista de partidos -->
+    <ion-list>
+      <ion-item *ngFor="let partido of partidos" [routerLink]="['/partido']">
+        <ion-label>{{partido.rival}}</ion-label>
+        <ion-label>{{partido.fecha}}</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-button expand="block" (click)="addPartido()">Añadir Partido</ion-button>
+  </div>
+</ion-content>

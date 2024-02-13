@@ -1,0 +1,24 @@
+
+<app-header title="Home"></app-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+ 
+    
+    <ion-button expand="block" (click)="logout()">Logout</ion-button>
+    <!-- lista de jugadores -->
+    <h2>Jugadores</h2>
+    <ion-list>
+      <!-- item enlazable con la pag jugador -->
+      <ion-item *ngFor="let jugador of jugadores" [routerLink]="['/jugador']">
+        <ion-label>{{jugador.dorsal}}</ion-label>
+        <ion-label>{{jugador.nombre}}</ion-label>
+        <ion-label>{{jugador.equipo}}</ion-label>
+      </ion-item>
+     
+    </ion-list>
+
+    <ion-button expand="block" (click)="addJugador()">Añadir Jugador</ion-button>
+  </div>
+</ion-content>

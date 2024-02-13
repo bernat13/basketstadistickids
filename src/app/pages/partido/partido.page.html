@@ -1,0 +1,59 @@
+<app-header title="partido"></app-header>
+<ion-content [fullscreen]="true">
+
+
+  <div id="container">
+    <!-- contenido de partido -->
+    <h2>Pau Gasol</h2>
+    <!-- contra -->
+    <p> <ion-label>Rival: Los Angeles Lakers</ion-label></p>
+    <p> <ion-label>Fecha: 12/12/2020</ion-label></p>
+
+    <!-- Estadisticas de 1 jugador-->
+    <h2>Estadisticas</h2>
+    <!-- puntos -->
+    <ion-grid>
+
+      <ion-row id="tabla">
+        <ion-col size="4">Puntos</ion-col>
+        <ion-col size="2">0</ion-col>
+        <ion-col size="6">
+          <ion-button (click)="addPuntos(1)">+1</ion-button>
+          <ion-button  (click)="addPuntos(2)">+2</ion-button>
+          <ion-button  (click)="addPuntos(3)">+3</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">Rebotes</ion-col>
+        <ion-col size="2">0</ion-col>
+        <ion-col >
+          <ion-button  (click)="addRebote()">+1</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">Asistencias</ion-col>
+        <ion-col size="2">0</ion-col>
+        <ion-col >
+          <ion-button  (click)="addAsistencia()">+1</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">Robos</ion-col>
+        <ion-col size="2">0</ion-col>
+        <ion-col >
+          <ion-button (click)="addRobo()">+1</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">Tapones</ion-col>
+        <ion-col size="2">0</ion-col>
+        <ion-col >
+          <ion-button  (click)="addTapon()">+1</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+
+  </div>
+</ion-content>
