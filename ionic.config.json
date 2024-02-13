@@ -1,0 +1,7 @@
+{
+  "name": "basketstadistickids",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
